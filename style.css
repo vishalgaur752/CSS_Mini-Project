@@ -10,13 +10,14 @@
     background-size: cover;
 }
 
-.btn_one {
+.btn_one i {
     color: white;
     font-size: 30px;
     font-weight: 700;
     position: absolute;
     left: 16px;
     line-height: 60px;
+    transition: all 0.3s linear;
 }
 
 .sidebar_menu {
@@ -26,13 +27,15 @@
     width: 300px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s linear;
 }
 
 .sidebar_menu .logo {
     position: absolute;
     width: 100%;
     line-height: 60px;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    height: 60px;
 }
 
 .sidebar_menu .logo a {
@@ -44,7 +47,7 @@
     font-weight: 500;
 }
 
-.sidebar_menu .btn_two i{
+.sidebar_menu .btn_two i {
     color: gray;
     font: 25px;
     line-height: 60px;
@@ -52,6 +55,7 @@
     left: 275px;
     opacity: 0;
     cursor: pointer;
+    transition: all 0.3s linear;
 }
 
 .sidebar_menu .menu {
@@ -97,26 +101,28 @@ a {
 .sidebar_menu .menu li:hover {
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
 }
+
 .btn_one i:hover {
     font-size: 40px;
 }
+
 .btn_two i:hover {
     font-size: 30px;
 }
 
 .sidebar_menu .social_media i:hover {
-     opacity: 1;
-     transform: scale(1.2);
+    opacity: 1;
+    transform: scale(1.2);
 }
 
-#check:checked ~ .sidebar_menu {
+#check:checked~.sidebar_menu {
     left: 0;
 }
 
-#check:checked ~ .btn_one i {
+#check:checked~.btn_one i {
     opacity: 0;
 }
 
-#check:checked ~ .sidebar_menu .btn_two i {
+#check:checked~.sidebar_menu .btn_two i {
     opacity: 1;
 }
